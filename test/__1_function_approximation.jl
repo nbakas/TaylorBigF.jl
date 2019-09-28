@@ -1,8 +1,5 @@
 using LinearAlgebra, Plots, Statistics, TaylorSeries, Printf
 
-# if !(pwd() in LOAD_PATH) push!(LOAD_PATH, pwd()) end
-# using TaylorBigF
-
 path1=realpath(dirname(@__FILE__)*"/..")
 include(string(path1,"/src/TaylorBigF.jl"))
 
