@@ -6,3 +6,7 @@
 - numerical integration
 - solution of ordinary and partial differential equations
 - system identification and inverse problems
+
+> How to use
+
+Download the files and run the examples comprised in the /test folder
