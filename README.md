@@ -1,4 +1,4 @@
-> Julia code for Numerical Methods with Taylors Series in High Arithmetic Precision
+> Julia code for Numerical Methods with Taylor Series in High Arithmetic Precision
 
 - interpolation
 - extrapolation
