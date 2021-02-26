@@ -10,7 +10,7 @@ include(string(path1,"/src/TaylorBigF.jl"))
 
 # 4.1 Multidimensional Interpolation
 
-p=2000;setprecision(p); setrounding(BigFloat, RoundUp);
+p=50;setprecision(p); setrounding(BigFloat, RoundUp);
 L=BigFloat("1"); n=BigInt(300); dx=BigFloat("2")*L/(n-1);
 x=convert(Array{BigFloat},(rand(n).-1/2)*1)
 y=convert(Array{BigFloat},(rand(n).-1/2)*1)
@@ -44,15 +44,16 @@ Vi=TaylorBigF.calc_Vandermonde_2D(xi,yi,n,n)
 fi_comp=Vi*a
 fi_analyt=func(xi,yi)
 diff_fi=maximum(abs.(fi_analyt-fi_comp));@sprintf("diff_fi=%1.3e",diff_fi)
-# scatter3d(xi,yi,fi_analyt,label="exact values"
-#     ,markershape=:rtriangle,color=:black,)
-# scatter3d!(xi,yi,fi_comp,label=string("approximated, p=",p)
-#     ,markershape=:cross,legend=:topleft,color=:black)
+scatter3d(xi,yi,fi_analyt,label="exact values"
+    ,markershape=:circle,color=:black)
+scatter3d!(xi,yi,fi_comp,label=string("approximated, p=",p)
+    ,markershape=:xcross,legend=:topleft,color=:black)
 # scatter3d!(xi,yi,fi_comp,label=string("approximated, p=",p)
 #     ,markershape=:xcross,legend=:topleft,color=:black,xaxis="x")
 # zlims!(-1.4,2.0)
 # maximum(fi_comp)
 # minimum(fi_comp)
-# savefig("interp3Dp2000.pdf")
+cd(dirname(@__FILE__))
+savefig(string("interp3Dp",string(p),".pdf"))
 # mean(abs.(V))-mean(abs.(Vi))
 # mean(abs.(x))-mean(abs.(xi))
