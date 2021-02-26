@@ -1,4 +1,4 @@
-module TaylorBigF
+module TaylorBigF 
 
     include("calc_Vandermonde.jl")
     include("calc_Vandermonde_inv_formula.jl")
