@@ -23,6 +23,4 @@ module TaylorBigF
     calc_Vandermonde_xxxx_2D,calc_Vandermonde_yyyy_2D,calc_Vandermonde_xxyy_2D,
     calc_Vandermonde_xxx_2D,calc_Vandermonde_yyy_2D,calc_Vandermonde_xyy_2D,calc_Vandermonde_yxx_2D
 
-
-
 end
