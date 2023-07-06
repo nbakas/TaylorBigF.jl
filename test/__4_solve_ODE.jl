@@ -1,5 +1,5 @@
 
-using LinearAlgebra, Plots, Statistics, TaylorSeries, Printf
+using LinearAlgebra, Plots, Statistics, TaylorSeries, Printf 
 # if !(pwd() in LOAD_PATH) push!(LOAD_PATH, pwd()) end
 # using TaylorBigF
 
