@@ -2,7 +2,7 @@
 
 - interpolation
 - extrapolation
-- numerical differentiation
+- numerical differentiation 
 - numerical integration
 - solution of ordinary and partial differential equations
 - system identification and inverse problems
